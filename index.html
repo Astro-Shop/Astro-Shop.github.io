@@ -1,53 +1,9 @@
-}
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 2px solid #ccc;
-  border-top: none;
-}
-</style>
-</head>
-<body>
-
-<h2>Tabs</h2>
-<p> </p>
-
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'home')">Home</button>
-  <button class="tablinks" onclick="openCity(event, 'about')">About</button>
-  <button class="tablinks" onclick="openCity(event, 'contact')">Contact</button>
+<div class="navbar">
+  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+  <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
 </div>
-
-<div id="home" class="tabcontent">
-  <h3>Home</h3>
-  <p>test</p>
-</div>
-
-<div id="about" class="tabcontent">
-  <h3>About</h3>
-  <p>test</p> 
-</div>
-
-<div id="contact" class="tabcontent">
-  <h3>Contact</h3>
-  <p>test</p>
-</div>
-
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
-   
